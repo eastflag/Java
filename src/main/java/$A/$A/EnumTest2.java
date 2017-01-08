@@ -1,4 +1,4 @@
-package $A;
+package $A.$A;
 import java.util.ArrayList;
 
 public class EnumTest2 {

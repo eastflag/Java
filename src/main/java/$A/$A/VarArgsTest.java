@@ -1,4 +1,4 @@
-package $A;
+package $A.$A;
 public class VarArgsTest {
 
 	public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package $A;
+package $A.$A;
 
-import $A.dto.Control.STATE;
+import $A.$A.dto.Control.STATE;
 
 public class EnumSwitch {
     

@@ -1,4 +1,4 @@
-package $A.dto;
+package $A.$A.dto;
 
 public class Control {
 
