@@ -12,11 +12,14 @@ public class FunctionExample2 {
 
 	public static double avg(ToIntFunction<Student> function) {
 		int sum = 0;
-		for(Student student : list) {
+/*		for(Student student : list) {
 			sum += function.applyAsInt(student);
-		}
-		double avg = (double) sum / list.size();
-		return avg;
+		}*/
+
+		//double avg = (double) sum / list.size();
+		//return avg;
+
+		return list.stream().mapToInt(function).average().getAsDouble();
 	}
 
 	public static void main(String[] args) {

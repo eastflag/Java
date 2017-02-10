@@ -13,14 +13,16 @@ public class PredicateExample {
 	);
 
 	public static double avg(Predicate<Student> predicate) {
-		int count = 0, sum = 0;
+/*		int count = 0, sum = 0;
 		for(Student student : list) {
 			if(predicate.test(student)) {
 				count++;
 				sum += student.getScore();
 			}
 		}
-		return (double) sum / count;
+		return (double) sum / count;*/
+
+		return list.stream().filter(predicate).mapToInt(s -> s.getScore()).average().getAsDouble();
 	}
 
 	public static void main(String[] args) {
